@@ -20,8 +20,8 @@ body {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -104,6 +104,46 @@ body {
   padding-left: 15px;
   padding-top: 5px;
 }
+
+/*Summary */
+
+.summaries {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  flex-direction: row;
+}
+#summary-content {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+#summary-content > li {
+  padding-bottom: 5px;
+}
+
+/*Technical Skills */
+
+.technical-skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  flex-direction: row;
+}
+
+#technical-skills-content {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+#technical-skills-content > li > p {
+  padding-left: 15px;
+}
+
 /*Academic History */
 
 .academic-history {
@@ -144,6 +184,10 @@ body {
 @media only screen and (max-width: 600px) {
   * {
     font-size: 12px;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .header {
     padding-top: 50;

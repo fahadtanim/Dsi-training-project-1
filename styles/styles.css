@@ -1,0 +1,141 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* border: 1px solid #222; */
+}
+.section-headers {
+  text-decoration: underline;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  flex-direction: row;
+}
+.header-content {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content > div {
+  align-self: center;
+}
+
+.image-content {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content > div {
+  max-width: 200px;
+  max-height: 200px;
+  border: 1px solid #222;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.profile-name {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.profile-address {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.profile-contact {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.profile-email {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+#profile-picture {
+  height: 100%;
+  width: 100%;
+}
+
+.blend-line {
+  height: 1px;
+  width: 60%;
+  background-color: cadetblue;
+}
+
+/*Academic History */
+
+.academic-history {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  flex-direction: row;
+}
+
+#educational-content {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+#educational-content > li > p {
+  padding-left: 15px;
+}
+
+#projects-content {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+}
+#projects-content > li {
+  /* list-style: none; */
+  padding-bottom: 15px;
+}
+
+#projects-content > li > p {
+  padding-left: 15px;
+}
+
+/*Responsive media querries*/
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 12px;
+  }
+  .header {
+    padding-top: 50;
+  }
+  .header-content {
+    width: 100%;
+    order: 2;
+    margin-top: 15px;
+  }
+  .image-content {
+    width: 100%;
+    order: 1;
+  }
+
+  .blend-line {
+    order: 3;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
